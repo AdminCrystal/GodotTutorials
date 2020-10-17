@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripting/Process Priority/ProcessPriority.gd" type="Script" id=1]
+
+[node name="RootNode" type="Node"]
+script = ExtResource( 1 )
+
+[node name="a" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="b" type="Node" parent="a"]
+script = ExtResource( 1 )
+
+[node name="c" type="Node" parent="a"]
+script = ExtResource( 1 )
+
+[node name="d" type="Node" parent="."]
+pause_mode = 1
+script = ExtResource( 1 )
+
+[node name="e" type="Node" parent="d"]
+script = ExtResource( 1 )

@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Process.gd" type="Script" id=1]
+
+[node name="Process" type="Node"]
+script = ExtResource( 1 )
+
+[node name="ProcessLabel" type="Label" parent="."]
+margin_right = 88.0
+margin_bottom = 76.0
+rect_scale = Vector2( 5, 5 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PhysicsProcessLabel" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -443.099
+margin_right = -355.099
+margin_bottom = 76.0
+rect_scale = Vector2( 5, 5 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSYNC" type="Button" parent="."]
+margin_left = 359.887
+margin_top = 292.314
+margin_right = 687.887
+margin_bottom = 352.314
+text = "Turn Off Vsync"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VSYNC" to="." method="_on_VSYNC_pressed"]
